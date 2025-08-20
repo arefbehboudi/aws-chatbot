@@ -181,7 +181,6 @@ mvn clean spring-boot:run
 * Implement `s3_put_object` / `s3_get_object_base64`
 * Normalize tool output schema (`ok`, `items`, `error`)
 * Conversation summarization for long histories
-* Dockerfile / Helm chart for deployment
 
 ---
 
