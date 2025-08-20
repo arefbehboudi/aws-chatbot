@@ -193,7 +193,6 @@ mvn clean spring-boot:run
   - Properly display **streaming responses** in real-time
   - Reload conversation history after page refresh
   - Add explicit **confirmation button** for destructive actions
-```
 
 
 ---
