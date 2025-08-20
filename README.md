@@ -1,6 +1,6 @@
 # Cloud Assistant MCP (Spring Boot + Vaadin + LangChain4j)
 
-[![Build](https://github.com/your-org/cloud-assistant-mcp/actions/workflows/maven.yml/badge.svg)](https://github.com/your-org/cloud-assistant-mcp/actions)
+[![Build](https://github.com/arefbehboudi/cloud-assistant-mcp/actions/workflows/maven.yml/badge.svg)](https://github.com/your-org/cloud-assistant-mcp/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/Java-17%2B-blue)](https://openjdk.org/projects/jdk/17/)
 [![Vaadin](https://img.shields.io/badge/UI-Vaadin-00b4f0)](https://vaadin.com/)
