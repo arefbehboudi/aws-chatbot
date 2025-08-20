@@ -175,12 +175,26 @@ mvn clean spring-boot:run
 
 ---
 
+
 ## 🛣️ Roadmap
 
-* Add `dryRun/confirm` flag for Terminate/Delete
-* Implement `s3_put_object` / `s3_get_object_base64`
-* Normalize tool output schema (`ok`, `items`, `error`)
-* Conversation summarization for long histories
+- Add **`dryRun/confirm` flag** for destructive operations (Terminate/Delete)
+- Implement new S3 methods:
+  - `s3_put_object`
+  - `s3_get_object_base64`
+- **Normalize tool output schema**:
+  - Fields `ok`, `items`, `error`
+- Add **conversation summarization** for long histories
+- Provide **Dockerfile** and **Helm chart** for Kubernetes deployment
+- Improve **ChatService**:
+  - Ensure `sink.complete()` is always called
+  - Use a stable `chatId` for each session
+- Improve **ChatView (Vaadin UI)**:
+  - Properly display **streaming responses** in real-time
+  - Reload conversation history after page refresh
+  - Add explicit **confirmation button** for destructive actions
+```
+
 
 ---
 
