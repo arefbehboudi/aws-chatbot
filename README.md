@@ -14,7 +14,7 @@ It supports managing **EC2** and **S3** resources, streaming chat responses, and
 
 Below is a short demo showing how Cloud Assistant MCP interacts with the user and manages AWS resources such as EC2 and S3:
 
-![Cloud Assistant Demo]([docs/demo.gif](https://github.com/arefbehboudi/aws-chatbot/blob/main/docs/demo.gif))
+![Cloud Assistant Demo](https://github.com/arefbehboudi/aws-chatbot/blob/main/docs/demo.gif)
 
 ---
 
