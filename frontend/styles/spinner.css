@@ -1,0 +1,19 @@
+spinner {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    position: relative;
+    border: 5px solid #353545;
+    border-color: #353545 transparent transparent transparent;
+    border-radius: 50%;
+    animation: spinner-animation 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

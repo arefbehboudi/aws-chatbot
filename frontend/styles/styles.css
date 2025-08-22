@@ -1,0 +1,248 @@
+:root {
+	--bg: #343541;
+	--surface-1: #444654;
+	--surface-2: #3c3f50;
+	--surface-3: #2a2b32;
+	--sidebar: #202123;
+	--text: #ffffff;
+	--muted: #acb2c7;
+	--accent: #10a37f;
+	--input: #40414f;
+	--bubble-user: #343541;
+	--bubble-bot: #444654;
+	--border: #565869;
+	--shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+	--radius: 12px;
+	--radius-sm: 8px;
+	--pad: 12px;
+	--gap: 12px;
+}
+
+
+html,
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	background-color: transparent;
+}
+
+.h6 {
+	color: var(--muted);
+}
+
+.btn-sidebar {
+	font-size: 0.9rem;
+	background-color: var(--sidebar);
+	color: var(--text);
+	border-radius: var(--radius-sm);
+	border: 1px solid var(--border);
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+.div-tools {
+	background-color: var(--input);
+	padding: var(--pad);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+}
+
+.div-tools-text {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--muted);
+}
+
+.output-tools {
+	background-color: var(--surface-1);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+}
+
+.sidebar {
+	background-color: var(--sidebar);
+	color: var(--text);
+	padding: var(--pad);
+	border-right: 1px solid var(--border);
+}
+
+.message {
+	padding: 12px;
+	border-radius: var(--radius-sm);
+	margin: 8px 0;
+	max-width: 80%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.message-user {
+	align-self: flex-end;
+	background-color: var(--bubble-user);
+	color: var(--text);
+	padding: 10px 14px;
+	border-radius: 18px;
+	border: 1px solid var(--border);
+}
+
+.message-bot {
+	align-self: flex-start;
+	background-color: var(--bubble-bot);
+	color: var(--text);
+	padding: 10px 14px;
+	border-radius: 18px;
+}
+
+vaadin-text-field,
+vaadin-button {
+	background-color: var(--input);
+	color: var(--text);
+	border-radius: var(--radius-sm);
+	border: 1px solid var(--border);
+	padding: 8px 10px;
+}
+
+vaadin-text-field:focus-within,
+vaadin-button:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+vaadin-button:hover {
+	background-color: var(--accent);
+	color: #fff;
+	border-color: transparent;
+}
+
+.scroller {
+	background-color: var(--bg);
+	padding: var(--pad);
+	overflow: auto;
+}
+
+.scroller::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.scroller::-webkit-scrollbar-track {
+	background: var(--surface-3);
+}
+
+.scroller::-webkit-scrollbar-thumb {
+	background: var(--surface-2);
+	border-radius: 4px;
+	border: 1px solid var(--border);
+}
+
+.scroller::-webkit-scrollbar-thumb:hover {
+	background: var(--input);
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 1.6;
+	background: var(--surface-1);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+	margin-bottom: var(--gap);
+}
+
+thead th {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background: var(--surface-2);
+	color: var(--text);
+	text-align: left;
+	font-weight: 600;
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--border);
+}
+
+td {
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--border);
+	background: var(--surface-1);
+	color: var(--text);
+	vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) {
+	background: var(--surface-1);
+}
+
+tbody tr:nth-child(even) {
+	background: var(--surface-3);
+}
+
+tbody tr:hover {
+	background: var(--input);
+}
+
+tbody td:first-child {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+	word-break: break-all;
+	direction: ltr;
+}
+
+thead th:first-child {
+	border-top-left-radius: var(--radius-sm);
+}
+
+thead th:last-child {
+	border-top-right-radius: var(--radius-sm);
+}
+
+tbody tr:last-child td:first-child {
+	border-bottom-left-radius: var(--radius-sm);
+}
+
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: var(--radius-sm);
+}
+
+pre,
+.json-output {
+	margin: 0;
+}
+
+.json-output {
+	padding: 8px 10px;
+	background: var(--surface-1);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-sm);
+}
+
+.json-output code {
+	display: block;
+	padding: 8px;
+}
+
+vaadin-details {
+	margin: 0;
+}
+
+vaadin-details::part(content) {
+	padding: 0;
+}
+
+vaadin-details::part(summary) {
+	padding: 4px 0;
+}
